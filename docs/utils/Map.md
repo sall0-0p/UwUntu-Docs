@@ -19,15 +19,34 @@ Map is basically a wrapper for standart lua table, but provides some additional 
 
 | Returns | Constructor | Description |
 |:-----------:|:-----------:|:-----------:|
-| Map | [Map()](http://127.0.0.1:4000/utils/Map.html#map-1) | Creates empty Map. |
-| Map | [Map(table)](http://127.0.0.1:4000/utils/Map.html#maptable) | Creates Map with values from standard Lua table. |
+| Map | [Map()](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#map-1) | Creates empty Map. |
+| Map | [Map(table)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#maptable) | Creates Map with values from standard Lua table. |
 
 | Returns | Method | Description |
 |:-----------:|:-----------:|:-----------:|
-| void | clear() | Removes all mappings present in the Map. |
-| void | isEmpty() | Removes all mappings present in the Map. |
-| V | compute(key, remappingFunction<K, V>) | Modifies value of certain key with provided function. |
-| V | computeIfAbsent(key, remappingFunction<K>) | Assings value to certain key using provided function. |
+| void | [clear()](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#clear) | Removes all mappings present in the Map. |
+| void | [isEmpty()](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#isempty) | Removes all mappings present in the Map. |
+| V? | [compute(key, remappingFunction)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#isempty) | Modifies value of certain key with provided function. |
+| V? | [computeIfAbsent(key, remappingFunction)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#computeifabsentkey-mappingfunctionk-v) | Assings value to certain key using provided function, but only if it is does not have value already assigned. |
+| V? | [computeIfPresent(key, remappingFunction)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#computeifabsentkey-mappingfunctionk-v) | Assings value to certain key using provided function, but only if it already has value already assigned. |
+| boolean | [containsKey(key)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#containskeykey) | Returns true if this map contains a mapping for the specified key. |
+| boolean | [containsValue(value)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#containsvaluevalue) | Returns true if this map maps one or more keys to the specified value. |
+| boolean | [equals(map)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#equalsmap) | Tests if Map provided has same mappings as your map. |
+| void | [forEach(action)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#foreachaction) | Performs the given action for each entry in this map. |
+| V? | [get(key)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#getkey) | Returns the value to which the specified key is mapped. |
+| V? | [put(key, value)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#putkey-value) | Associates the specified value with the specified key in this map. |
+| void | [putAll(map)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#putallmap) | Copies all of the mappings from the specified map to this map. |
+| V? | [putIfAbsent(key, value)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#putifabsentkey-value) | If the key is not already mapped to a value mapps it to the given value. |
+| V? | [remove(key)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#removekey) | Removes the mapping for a key from this map if it is present. |
+| boolean | [remove(key, value)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#removekey-value) | Removes the mapping for a key from this map if it is matches value provided. |
+| boolean | [replace(key, value)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#replacekey-value) | Replaces entry only if it is already mapped to specific value. |
+| boolean | [replaceAll(mappingFunction)](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#replaceallmappingfunctionk-v) | Replaces each entry’s value with the result of invoking the given function on that entry. |
+| table | [getKeys()](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#getkeys) | Returns all keys that are mapped to values in this map. |
+| table | [getValues()](https://sall0-0p.github.io/UwUntu-Docs/docs/utils/Map.html#getvalues) | Returns all values that are mapped to keys in this map. |
+
+
+
+
 
 {: .note}
 > **🔄 Iterating with Maps**
@@ -113,7 +132,7 @@ If the specified key is not already associated with a value (or is mapped to nil
 
 **Return values**
 
-1. `V` - value computed.
+1. `V?` - value computed.
    
 ## `computeIfPresent(key, mappingFunction<K, V>)`
 {: .divider}
@@ -126,7 +145,7 @@ If the value for the specified key is present, attempts to compute a new mapping
 
 **Return values**
 
-1. `V` - value computed.
+1. `V?` - value computed.
 
 ## `containsKey(key)`
 {: .divider}
