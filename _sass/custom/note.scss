@@ -1,0 +1,36 @@
+.note {
+    background-color: rgba(#273830, 1);
+    padding: 3px 10px 10px 10px;
+    border-radius: $border-radius * 2;
+    border-left: 0px;
+    color: #4ccd90;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.important {
+    background-color: rgba(#243547, 1);
+    padding: 3px 10px 10px 10px;
+    border-radius: $border-radius * 2;
+    border-left: 0px;
+    color: #01bffe;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+// 110e21
+// warning #412138
+// note #273830
+// important #243547 #01bffe
+
+.note-title {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+.important-title {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}

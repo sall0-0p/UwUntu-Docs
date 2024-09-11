@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+// Tables
+// stylelint-disable max-nesting-depth, selector-no-type, selector-max-type
+
+.table-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: $sp-5;
+    overflow-x: auto;
+    border-radius: $border-radius;
+    background-color: $secondary-light;
+    box-shadow: none;
+    border: $border rgba($border-color, 0.5);
+  }
+  
+  table {
+    display: table;
+    min-width: 100%;
+    border-collapse: separate;
+  }
+  
+  th,
+  td {
+    min-width: 7.5rem;
+    padding: 3px;
+    background-color: $secondary-dark;
+    border-bottom: $border rgba($border-color, 0.5);
+    border-left: $border $border-color;
+    font-family: "Roboto Mono", monospace;
+  
+    @include fs-3;
+  
+    &:first-of-type {
+      border-left: 0;
+    }
+  }
+  
+  tbody {
+    tr {
+      &:last-of-type {
+        th,
+        td {
+          border-bottom: 0;
+        }
+  
+        td {
+          padding-bottom: 3px;
+        }
+      }
+    }
+  }
+  
+  thead {
+    th {
+      border-bottom: $border $border-color;
+    }
+  }

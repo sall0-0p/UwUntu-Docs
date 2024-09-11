@@ -1,0 +1,21 @@
+div.highlighter-rouge {
+    border: $border $border-color;
+}
+
+.highlight {
+    background-color: $primary-dark;
+    border-radius: $border-radius;
+    
+}
+
+code {
+    background-color: $primary-dark;
+}
+
+.pre {
+    background-color: $primary-dark;
+}
+
+.highlight pre {
+    background-color: $primary-dark;
+}

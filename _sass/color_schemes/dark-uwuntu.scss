@@ -1,0 +1,16 @@
+@import "./color_schemes/dark";
+
+// General variables
+$primary-dark: #1f1f1f;
+$secondary-dark: #292929;
+$accent-color-light: #de7aeb;
+
+// Element specific
+$body-background-color: $primary-dark;
+$sidebar-color: $secondary-dark;
+$link-color: $accent-color-light;
+$table-background-color: $primary-dark;
+$code-background-color: $primary-dark;
+
+$content-width: 1200px;
+$nav-width: 300px;

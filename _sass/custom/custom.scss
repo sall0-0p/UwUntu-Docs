@@ -1,0 +1,29 @@
+@import './table.scss';
+@import './note.scss';
+@import './code.scss';
+
+.label:not(g) {
+    border-radius: 5px;
+}
+
+.label-dark:not(g) {
+    background-color: $secondary-light;
+}
+
+.laber-notinline:not(g) {
+    margin-left: 0px;
+}
+
+.divider {
+    border-top: 1px solid $secondary-light;
+    padding-top: 35px;
+}
+
+.main-content > h2 {
+    margin-top: 0.25em;
+}
+
+p {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
